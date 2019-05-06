@@ -1,6 +1,5 @@
 package com.zb.basework.http;
 
-import com.zb.basework.model.ArticleListResponse;
 import com.zb.basework.model.Version;
 
 import java.util.Map;
@@ -15,10 +14,6 @@ import retrofit2.http.POST;
  */
 
 public interface ServiceApi {
-    // 获取首页文章数据
-    @FormUrlEncoded
-    @POST("article/list/{page}/json")
-    Observable<HttpResult<ArticleListResponse>> getArticles(@FieldMap Map<String,String> params);
 
     /**
      * 检查更新

@@ -1,6 +1,5 @@
 package com.zb.basework.http;
 
-import com.zb.basework.model.ArticleListResponse;
 import com.zb.basework.model.Version;
 
 import java.util.Map;
@@ -22,6 +21,7 @@ public class AppClient {
         this.mServiceApi = mServiceApi;
     }
 
+    //Rxjava变换   将A转为B 并将B返回
     class RxMapFunction<T> implements Function<HttpResult<T>,T> {
 
         @Override
@@ -35,11 +35,11 @@ public class AppClient {
         }
     }
 
-    public Observable<ArticleListResponse> getArticles(Map<String,String>params){
-        Observable<ArticleListResponse> observable = mServiceApi.getArticles(params)
-                .map(new RxMapFunction<ArticleListResponse>());
-        return observable;
-    }
+//    public Observable<Object> getArticles(Map<String,String>params){
+//        Observable<Object> observable = mServiceApi.getArticles(params)
+//                .map(new RxMapFunction<Object>());
+//        return observable;
+//    }
     public Observable<Version> checkVersion(Map<String,String>params){
         Observable<Version> observable = mServiceApi.checkVersion(params);
         return observable;

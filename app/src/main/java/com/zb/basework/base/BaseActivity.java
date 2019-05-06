@@ -4,13 +4,10 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
-
 import com.zb.basework.MyApplication;
 import com.zb.basework.di.component.ActivityComponent;
 import com.zb.basework.di.component.DaggerActivityComponent;
-
 import javax.inject.Inject;
-
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
 import io.reactivex.disposables.CompositeDisposable;
@@ -20,10 +17,10 @@ import io.reactivex.disposables.CompositeDisposable;
  * Created by zb on 2019/5/5.
  */
 
-public abstract class BaseActivity<T extends BaseContact.Presenter> extends AppCompatActivity implements BaseContact.BaseView {
+public abstract class BaseActivity<P extends BaseContact.Presenter> extends AppCompatActivity implements BaseContact.BaseView {
 
     @Inject
-    protected T presenter;
+    protected P presenter;
 
     //Dagger2的使用
     protected ActivityComponent activityComponent;
