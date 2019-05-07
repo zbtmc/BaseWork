@@ -70,7 +70,9 @@ public abstract class BaseActivity<P extends BaseContact.Presenter> extends AppC
     @Override
     protected void onDestroy() {
         binder.unbind();
-        compositeDisposable.clear();
+        if (compositeDisposable!=null && compositeDisposable.size()>0){
+            compositeDisposable.clear();
+        }
         if (presenter!=null)
             presenter.detachView();
         super.onDestroy();

@@ -8,6 +8,7 @@ import javax.inject.Singleton;
 import dagger.Component;
 
 /**
+ * 作用域为全局
  * Created by zb on 2019/5/5.
  */
 @Singleton

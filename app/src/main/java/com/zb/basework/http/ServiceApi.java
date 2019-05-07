@@ -23,4 +23,11 @@ public interface ServiceApi {
     @FormUrlEncoded
     @POST("android/checkVersion")
     Observable<Version> checkVersion(@FieldMap Map<String, String> params);
+
+    /**
+     * HttpResult举例
+     */
+    @FormUrlEncoded
+    @POST("getData")
+    Observable<HttpResult<Object>> getData(@FieldMap Map<String,String> params);
 }

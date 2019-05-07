@@ -6,7 +6,6 @@ package com.zb.basework;
  */
 
 public interface Config {
-//    String baseUrl = "http://www.wanandroid.com/";
     String baseUrl = "http://192.168.1.142:8080/";
 
     //超时时间

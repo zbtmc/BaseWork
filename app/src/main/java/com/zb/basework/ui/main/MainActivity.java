@@ -1,6 +1,5 @@
 package com.zb.basework.ui.main;
 
-import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.widget.TextView;
 

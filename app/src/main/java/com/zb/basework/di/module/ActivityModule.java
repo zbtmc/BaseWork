@@ -7,7 +7,8 @@ import dagger.Provides;
 import io.reactivex.disposables.CompositeDisposable;
 
 /**
- * ActivityScope作用域
+ * 对象提供者
+ * ActivityScope为作用域
  * Created by zb on 2019/5/5.
  */
 @ActivityScope

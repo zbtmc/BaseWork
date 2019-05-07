@@ -1,12 +1,13 @@
 package com.zb.basework.http;
 
 /**
+ * 后台返回数据
  * Created by zb on 2019/5/5.
  */
 
 public class HttpResult<T> {
 
-    private int code;
+    private int code;  //与后台约定的状态码
     private String msg;
     private T data;
 

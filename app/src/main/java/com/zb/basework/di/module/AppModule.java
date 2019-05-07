@@ -17,6 +17,7 @@ import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
+ * 全局对象提供者
  * Created by zb on 2019/5/5.
  */
 @Module
@@ -37,7 +38,7 @@ public class AppModule {
     @Provides
     @Singleton
     Retrofit provideRetrofit(OkHttpClient okHttpClient) {
-        //不配置client则创建默认的okhttp3
+        //不配置client则创建默认的okhttp
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(Config.baseUrl)
                 .client(okHttpClient)

@@ -35,11 +35,12 @@ public class AppClient {
         }
     }
 
-//    public Observable<Object> getArticles(Map<String,String>params){
-//        Observable<Object> observable = mServiceApi.getArticles(params)
-//                .map(new RxMapFunction<Object>());
-//        return observable;
-//    }
+    public Observable<Object> getData(Map<String,String>params){
+        Observable<Object> observable = mServiceApi.getData(params)
+                .map(new RxMapFunction<Object>());
+        return observable;
+    }
+
     public Observable<Version> checkVersion(Map<String,String>params){
         Observable<Version> observable = mServiceApi.checkVersion(params);
         return observable;
