@@ -8,4 +8,12 @@ ext {
     buildVersion = '29.0.2'
     appSourceCompatibility = JavaVersion.VERSION_1_8
     appTargetCompatibility = JavaVersion.VERSION_1_8
+
+    depVersion=[
+            okhttpVersion = '4.2.2',
+            okhttpLogingVersion = '4.2.1',
+            retrofitVersion = '2.7.0',
+            glideVersion = '4.10.0',
+    ]
+
 }
