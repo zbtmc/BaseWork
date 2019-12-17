@@ -1,0 +1,11 @@
+ext {
+    applicationid = "com.zb.basework"
+    targetVersion = 29
+    compileVersion = 29
+    minVersion = 21
+    versionCode = 1
+    versionName = '1.0.0'
+    buildVersion = '29.0.2'
+    appSourceCompatibility = JavaVersion.VERSION_1_8
+    appTargetCompatibility = JavaVersion.VERSION_1_8
+}

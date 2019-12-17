@@ -1,6 +1,6 @@
 package com.zb.basework.ui.main;
 
-import android.support.v4.app.FragmentTransaction;
+import androidx.fragment.app.FragmentTransaction;
 import android.widget.TextView;
 
 import com.jakewharton.rxbinding2.view.RxView;
